@@ -189,7 +189,7 @@ def update_complete_exercise(id:str, complete_exercise: CompleteExercise):
 
                 {"$set": update_data}
                  )
-            return JSONResponse(content="ACTUALIZADO CORRECTAMENTE", status_code= status.HTTP_200_OK)
+            return JSONResponse(content="ACTUALIZADO", status_code= status.HTTP_200_OK)
         
         else:
             return JSONResponse(content="NO SE ENCONTRÓ ESE ID", status_code= status.HTTP_204_NO_CONTENT)
